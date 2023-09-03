@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* .left{
+    float: left;
+   
+}
+
+.right{
+    float: right;
+} */
+
+.a{
+    cursor: pointer;
+    padding-right: 3rem;
+    color: var(--secondary)
+}

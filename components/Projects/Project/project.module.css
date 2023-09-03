@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    padding: 2rem;
+   
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    gap: 2rem;
+}
+
+.screenshot_container img{
+    width:  40rem;
+}
+
+.buttons{
+    display: flex;
+
+}
+
+.view_button svg{
+    height: 1.5rem;
+}
+
+.view_button {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.view_button:hover{
+    text-decoration: underline;
+}

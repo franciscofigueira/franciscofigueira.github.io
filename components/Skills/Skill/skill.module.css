@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+
+}
+
+.name{
+    padding-left: 0.5rem;
+    
+}
+
+.container svg{
+  width: 100%;
+  height: 2rem;
+}

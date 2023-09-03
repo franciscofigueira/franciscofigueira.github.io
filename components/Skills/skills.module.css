@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+}
+
+.header{
+    text-align: center;
+}
+
+.skill_row{
+    display: inline-flex;
+    
+    
+}
+.skills_container{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+.skills_box{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    align-items: center;
+    padding-top: 5rem;
+}
