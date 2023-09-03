@@ -8,7 +8,7 @@ export default function Hero(){
                 <h3>Hello, my name is:</h3>
                 <h1>Francisco Figueira</h1>
                 <h1>I build Software</h1>
-                <h2>I'm a software enginner focusing on building web3 apps</h2>
+                <h2>I&apos;m a software enginner focusing on building web3 apps</h2>
                 <div>
                     <a href="#Contact" className={styles.contact_button}>Get in touch</a>
                 </div>
