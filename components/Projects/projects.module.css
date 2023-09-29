@@ -4,15 +4,46 @@
     display: flex;
     flex-direction: column;
     position:relative;
+    /* align-items: center; */
 }
 
 .header{
     text-align: center;
     padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.header h1{
+ font-size: 3rem;
+ color:var(--title-rgb)
+}
+
+.bar{
+    border-top: 2px solid var(--titleBar);
+    width: 100%;
 }
 
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
+    gap: 2rem;
+    padding: 2rem;
+    /* align-items: center; */
+}
+
+@media (width < 1900px){
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .bar{
+        display: none;
+    }
 }

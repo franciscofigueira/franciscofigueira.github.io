@@ -6,9 +6,12 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background-color: black;
-
+    background-color: var(--primary);
+    /* background-color: white; */
+    border-radius: 8px;
+    color: var(--colorPrimaryBackground)
 }
+
 
 .name{
     padding-left: 0.5rem;

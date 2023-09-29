@@ -6,9 +6,107 @@
     justify-content: left;
     text-align: left;
     padding: 5rem;
+    gap: 30rem;
 }
 
-.contact_button{
- cursor: pointer;
- color: var(--secondary)
+.description h3{
+    color:  var(--secondary);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.description h2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.description h1{
+    font-size: 5rem;
+    padding-top: 0.5rem;
+}
+
+
+.contact_button {
+    cursor: pointer;
+    color: var(--secondary);
+    display: inline-block;
+    position: relative;
+    margin-left: 20rem;
+}
+  
+.blog_button{
+    cursor: pointer;
+    color: var(--secondary);
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+}
+
+.contact_button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.blog_button:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.contact_button:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.blog_button:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media (width < 1900px){
+    .description h2{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .description h1{
+        font-size: 3rem;
+        padding-top: 0.5rem;
+    }
+
+    .player{
+        display: none;
+    }
+
+    .contact_button {
+        cursor: pointer;
+        color: var(--secondary);
+        display: inline-block;
+        position: relative;
+        margin-left: 1rem;
+    }
+      
+    .blog_button{
+        cursor: pointer;
+        color: var(--secondary);
+        display: inline-block;
+        position: relative;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
 }

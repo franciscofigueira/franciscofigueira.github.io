@@ -1,27 +1,35 @@
 import styles from"./project.module.css"
 import { ProjectType } from "../Projects"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function Project({ title,screenshot,description,github,link}: ProjectType){
 
     let git
     if (github){
         git = <a className={styles.view_button} href={github} target="_blank" rel="noopener noreferrer">
-            View Source Code {githubIcon}
+            {githubIcon} View Source Code 
         </a>
     }
 
     let source
     if (link){
         source =   <a className={styles.view_button} href={link} target="_blank" rel="noopener noreferrer">
-            View Project   {arrowIcon} 
+           {arrowIcon}   View Project  
         </a>
     }
 
+    let underDevelopment
+    if(!link && !github){
+        underDevelopment = (<p>
+            Currently under development.
+        </p>)
+    }
+
     return(
-        <>
         <div className={styles.container}>
             <div className={styles.screenshot_container}>
-                <img src={screenshot} alt={title}/>
+                <Image src={screenshot} alt={title} fill/>
             </div>
             <div className={styles.details}>
                 <h1 className={styles.title}>{title}</h1>
@@ -29,10 +37,10 @@ export default function Project({ title,screenshot,description,github,link}: Pro
                 <div className={styles.buttons}>
                     {source}      
                     {git}   
+                    {underDevelopment}
                 </div>
             </div>
         </div>
-        </>
     )
 }
 
